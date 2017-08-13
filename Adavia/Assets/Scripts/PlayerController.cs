@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour {
 			Movement ();
 
 			MovementAnim ();
+
+			HairAnim ();
 		
 			if (Input.GetButtonDown ("Jump")) {
 				Jump ();
