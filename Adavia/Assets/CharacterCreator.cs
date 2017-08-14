@@ -11,17 +11,31 @@ public class CharacterCreator : MonoBehaviour {
 	public SpriteRenderer playerHair;
 	public Sprite[] playerDummyHairArray;
 	private int hairSelector;
-	public int hairArrayAmount;
+	private int hairArrayAmount;
 	public Text hairNumber;
 	public Animator hairAnim;
 
 	[Header ("Animation Examples")]
 	public Animator DummyAnim;
+	public int animNumber;
+
+	[Header ("Facial Hair")]
+	public SpriteRenderer playerFacialHair;
+	public Sprite[] playerFacialHairArray;
+	private int facialHairSelector;
+	private int facialHairArrayAmount;
+	public Text facialHairNumber;
+	public Animator facialHairAnim;
+	public GameObject facialHairUI;
+
+	[Header ("Glasses")]
+	public GameObject GlassesUI;
 
 
 	// Use this for initialization
 	void Start () 
 	{
+		facialHairArrayAmount = playerFacialHairArray.Length;
 		hairArrayAmount = playerDummyHairArray.Length;
 		playerHair.sprite = playerDummyHairArray [hairSelector];
 
@@ -40,7 +54,7 @@ public class CharacterCreator : MonoBehaviour {
 			DummyAnim.SetBool ("Walking", false);
 			DummyAnim.SetBool ("Jumping", false);
 			DummyAnim.SetBool ("Crouching", false);
-
+			animNumber = 0;
 		}
 
 		if (animName == "Run") 
@@ -48,6 +62,7 @@ public class CharacterCreator : MonoBehaviour {
 			DummyAnim.SetBool ("Walking", true);
 			DummyAnim.SetBool ("Jumping", false);
 			DummyAnim.SetBool ("Crouching", false);
+			animNumber = 1;
 		}
 
 		if (animName == "Jump") 
@@ -55,6 +70,7 @@ public class CharacterCreator : MonoBehaviour {
 			DummyAnim.SetBool ("Walking", false);
 			DummyAnim.SetBool ("Jumping", true);
 			DummyAnim.SetBool ("Crouching", false);
+			animNumber = 2;
 		}
 
 		if (animName == "Crouch") 
@@ -62,7 +78,9 @@ public class CharacterCreator : MonoBehaviour {
 			DummyAnim.SetBool ("Walking", false);
 			DummyAnim.SetBool ("Jumping", false);
 			DummyAnim.SetBool ("Crouching", true);
+			animNumber = 3;
 		}
+	
 
 		///// Hair //////
 
@@ -71,6 +89,7 @@ public class CharacterCreator : MonoBehaviour {
 			hairAnim.SetBool ("Walking", false);
 			hairAnim.SetBool ("Jumping", false);
 			hairAnim.SetBool ("Crouching", false);
+			animNumber = 0;
 		}
 
 		if (animName == "Run") 
@@ -78,6 +97,7 @@ public class CharacterCreator : MonoBehaviour {
 			hairAnim.SetBool ("Walking", true);
 			hairAnim.SetBool ("Jumping", false);
 			hairAnim.SetBool ("Crouching", false);
+			animNumber = 1;
 		}
 
 		if (animName == "Jump") 
@@ -85,6 +105,7 @@ public class CharacterCreator : MonoBehaviour {
 			hairAnim.SetBool ("Walking", false);
 			hairAnim.SetBool ("Jumping", true);
 			hairAnim.SetBool ("Crouching", false);
+			animNumber = 2;
 		}
 
 		if (animName == "Crouch") 
@@ -92,9 +113,69 @@ public class CharacterCreator : MonoBehaviour {
 			hairAnim.SetBool ("Walking", false);
 			hairAnim.SetBool ("Jumping", false);
 			hairAnim.SetBool ("Crouching", true);
+			animNumber = 3;
 		}
 
 
+	}
+
+	public void ShowFacialHair(bool value)
+	{
+		if (value == true) 
+		{
+			facialHairUI.SetActive (true);
+			playerFacialHair.gameObject.SetActive (true);
+		}
+
+		if (value == false) 
+		{
+			facialHairUI.SetActive (false);
+			playerFacialHair.gameObject.SetActive (false);
+		}
+	}
+
+	public void ShowGlasses(bool value)
+	{
+		if (value == true) 
+		{
+			GlassesUI.SetActive (true);
+		}
+
+		if (value == false) 
+		{
+			GlassesUI.SetActive (false);
+		}
+	}
+
+	public void ChangeFacialHair(bool left)
+	{
+		if (left) 
+		{
+
+			facialHairSelector--;
+			if (facialHairSelector < 0) 
+			{
+				facialHairSelector = facialHairArrayAmount -1;
+			}
+			facialHairNumber.text = "" + facialHairSelector;
+
+		}
+
+		if (!left) 
+		{
+			facialHairSelector++;
+			if (facialHairSelector > facialHairArrayAmount -1) 
+			{
+				facialHairSelector = 0;
+			}
+			facialHairNumber.text = "" + facialHairSelector;
+		}
+
+		playerFacialHair.sprite = playerFacialHairArray [facialHairSelector];
+		facialHairAnim.SetInteger ("Facial Hair Selector", facialHairSelector);
+		DummyAnim.Play(animNumber, -1, 0f);
+		hairAnim.Play (animNumber, -1, 0f);
+		facialHairAnim.Play (animNumber, -1, 0f);
 	}
 
 	public void ColorSkin(Image other)
@@ -134,7 +215,8 @@ public class CharacterCreator : MonoBehaviour {
 
 		playerHair.sprite = playerDummyHairArray [hairSelector];
 		hairAnim.SetInteger ("Hair Selector", hairSelector);
-
-	
+		DummyAnim.Play(animNumber, -1, 0f);
+		hairAnim.Play (animNumber, -1, 0f);
+		facialHairAnim.Play (animNumber, -1, 0f);
 	}
 }
