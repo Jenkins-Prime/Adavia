@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Toka Village.unity
+- path: Assets/Scenes/Toka Village.unity
   isLoaded: 1
   isActive: 1
