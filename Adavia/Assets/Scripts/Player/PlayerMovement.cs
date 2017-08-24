@@ -12,53 +12,58 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isWalking;
 
+    private Vector2 facingDirection;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         rBody = GetComponent<Rigidbody2D>();
     }
 
-    void FixedUpdate ()
+
+
+
+    void Update ()
     {
         Movement(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
 	}
 
     private void Movement(float xDirection, float yDirection)
     {
-        
-        if (xDirection < 0.5f || xDirection > -0.5f)
+        isWalking = false;
+
+        if (xDirection < 0.0f || xDirection > 0.0f)
         {
             rBody.velocity = new Vector2(xDirection, rBody.velocity.y).normalized * walkingSpeed;
             isWalking = true;
-            
+            facingDirection = new Vector2(xDirection, 0.0f);
+
         }
 
-        if (yDirection < 0.5f || yDirection > -0.5f)
+        if (yDirection < 0.0f || yDirection > 0.0f)
         {
             rBody.velocity = new Vector2(rBody.velocity.x, yDirection).normalized * walkingSpeed;
             isWalking = true;
+            facingDirection = new Vector2(0.0f, yDirection);
+        }
+
+        if (xDirection <= 0.0f && xDirection >= 0.0f)
+        {
+            rBody.velocity = new Vector2(0.0f, rBody.velocity.y);
+        }
+
+        if (yDirection <= 0.0f && yDirection >= 0.0f)
+        {
+            rBody.velocity = new Vector2(rBody.velocity.x, 0.0f);
             
         }
 
-        if (xDirection < 0.5f && xDirection > -0.5f)
-        {
-            rBody.velocity = new Vector2(0.0f, rBody.velocity.y);
-            isWalking = false;
-        }
-
-        if (yDirection < 0.5f && yDirection > -0.5f)
-        {
-            rBody.velocity = new Vector2(rBody.velocity.x, 0.0f);
-            isWalking = false;
-        }
-
+        animator.SetFloat("xSpeed", xDirection);
+        animator.SetFloat("ySpeed", yDirection);
+        animator.SetFloat("xDirection", facingDirection.x);
+        animator.SetFloat("yDirection", facingDirection.y);
         animator.SetBool("isWalking", isWalking);
 
-        if (isWalking)
-        {
-            animator.SetFloat("xSpeed", xDirection);
-            animator.SetFloat("ySpeed", yDirection);
-        }
+
     }
 }
