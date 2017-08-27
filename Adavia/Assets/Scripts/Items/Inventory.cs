@@ -41,6 +41,7 @@ public class Inventory : MonoBehaviour
         AddItem(2);
         AddItem(2);
         AddItem(2);
+		AddItem(3);
     }
 
     public void AddItem(int id)

@@ -13,14 +13,14 @@
 	
 	{
 		"id": 1,
-		"name": "Iron Axe",
-		"description": "This is a axe made out of Iron",
+		"name": "Iron Mace",
+		"description": "This is a mace made out of Iron",
 		"quest": false,
 		"stackable": false,
 		"price": 20,
 		"durability": 100,
 		"damage": 10,
-		"string": "iron_axe"
+		"string": "iron_mace"
 		
 	},
 	
@@ -33,6 +33,18 @@
 		"price": 200,
 		"durability": 100,
 		"damage": 25,
-		"string": "staff_of_the_seventh_demon"
-	}
+		"string": "dark_staff"
+	},
+
+                   {
+                                     "id": 3,
+		"name": "Health Potion",
+		"description": "A magic concotion that can heal wounds.",
+		"quest": false,
+		"stackable": true,
+		"price": 50,
+		"durability": 0,
+		"damage": -50,
+		"string": "health_potion"
+                   }
 ]
