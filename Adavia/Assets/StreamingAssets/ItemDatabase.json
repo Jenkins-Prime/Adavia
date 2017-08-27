@@ -1,0 +1,38 @@
+[
+	{
+		"id": 0,
+		"name": "Wooden Sword",
+		"description": "This is a sword made out of wood",
+		"quest": false,
+		"stackable": false,
+		"price": 5,
+		"durability": 100,
+		"damage": 5,
+		"string": "wooden_sword"
+	},
+	
+	{
+		"id": 1,
+		"name": "Iron Axe",
+		"description": "This is a axe made out of Iron",
+		"quest": false,
+		"stackable": false,
+		"price": 20,
+		"durability": 100,
+		"damage": 10,
+		"string": "iron_axe"
+		
+	},
+	
+	{
+		"id": 2,
+		"name": "Staff of the Seventh Demon",
+		"description": "This is a powerful staff",
+		"quest": false,
+		"stackable": true,
+		"price": 200,
+		"durability": 100,
+		"damage": 25,
+		"string": "staff_of_the_seventh_demon"
+	}
+]
