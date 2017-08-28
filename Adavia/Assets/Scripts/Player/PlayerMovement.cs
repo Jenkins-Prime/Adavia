@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float walkingSpeed;
 
+    [SerializeField]
+    private Inventory inventory;
+
     private bool isWalking;
 
     private Vector2 facingDirection;
@@ -63,7 +66,13 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("xDirection", facingDirection.x);
         animator.SetFloat("yDirection", facingDirection.y);
         animator.SetBool("isWalking", isWalking);
+    }
 
-
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Item"))
+        {
+            inventory.AddItem(col.GetComponent<Item>());
+        }
     }
 }
