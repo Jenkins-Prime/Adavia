@@ -2,10 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
     private Stack<Item> items;
+
+    public Stack<Item> Items
+    {
+        get { return items; }
+        set { items = value; }
+    }
+
     [SerializeField]
     private Text stackAmountText;
 
@@ -21,7 +30,7 @@ public class InventorySlot : MonoBehaviour
         items = new Stack<Item>();
         stackAmountText.text = "";
         RectTransform slotRect = GetComponent<RectTransform>();
-        RectTransform stackRect = GetComponent<RectTransform>();
+        RectTransform stackRect = stackAmountText.GetComponent<RectTransform>();
 
         int scaleFactor = (int)(slotRect.sizeDelta.x * 0.60f);
         stackAmountText.resizeTextMinSize = scaleFactor;
@@ -38,14 +47,18 @@ public class InventorySlot : MonoBehaviour
         if (items.Count > 1)
         {
             stackAmountText.text = items.Count.ToString();
+
         }
 
         UpdateSprite(item.normalSprite, item.hoversprite);
     }
 
-    public void RemoveItem()
+    public void AddItems(Stack<Item> items)
     {
-        items.Pop();
+        this.items = new Stack<Item>(items);
+        stackAmountText.text = items.Count > 1 ? items.Count.ToString() : "";
+        UpdateSprite(GetCurrentItem().normalSprite, GetCurrentItem().hoversprite);
+
     }
 
     private void UpdateSprite(Sprite normal, Sprite hover)
@@ -59,8 +72,50 @@ public class InventorySlot : MonoBehaviour
         GetComponent<Button>().spriteState = state;
     }
 
+    private void UseItem()
+    {
+        if (!IsSlotEmpty())
+        {
+            items.Pop().Use();
+
+            stackAmountText.text = items.Count > 1 ? items.Count.ToString() : "";
+
+            if (IsSlotEmpty())
+            {
+                UpdateSprite(slotEmpty, slotHover);
+                Inventory.EmptySlots++;
+            }
+
+        }
+    }
+
+    public void ClearSlot()
+    {
+        items.Clear();
+        UpdateSprite(slotEmpty, slotHover);
+        stackAmountText.text = "";
+    }
+
     public bool IsSlotEmpty()
     {
         return items.Count == 0;
+    }
+
+    public Item GetCurrentItem()
+    {
+        return items.Peek();
+    }
+
+    public bool IsStackable()
+    {
+        return GetCurrentItem().stackAmount > items.Count;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            UseItem();
+        }
     }
 }

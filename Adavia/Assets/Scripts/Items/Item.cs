@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Item : MonoBehaviour
 {
     [SerializeField]
-    private ItemType item;
+    public ItemType item;
 
     public Sprite normalSprite;
 
