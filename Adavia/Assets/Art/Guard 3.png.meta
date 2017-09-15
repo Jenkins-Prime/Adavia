@@ -1,133 +1,29 @@
 fileFormatVersion: 2
-guid: c7ffca5aec711ac47ac13a02ad3a9912
-timeCreated: 1505493754
+guid: 4c4fd5f28e171d049b5c6a34a0008fea
+timeCreated: 1505501747
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Char_Base_0
-    21300002: Char_Base_1
-    21300004: Char_Base_2
-    21300006: Char_Base_3
-    21300008: Char_Base_4
-    21300010: Char_Base_5
-    21300012: Char_Base_6
-    21300014: Char_Base_7
-    21300016: Char_Base_8
-    21300018: Char_Base_9
-    21300020: Char_Base_10
-    21300022: Char_Base_11
-    21300024: Char_Base_12
-    21300026: Char_Base_13
-    21300028: Char_Base_14
-    21300030: Char_Base_15
-    21300032: Char_Base_16
-    21300034: Char_Base_17
-    21300036: Char_Base_18
-    21300038: Char_Base_19
-    21300040: Char_Base_20
-    21300042: Char_Base_21
-    21300044: Char_Base_22
-    21300046: Char_Base_23
-    21300048: Char_Base_24
-    21300050: Char_Base_25
-    21300052: Char_Base_26
-    21300054: Char_Base_27
-    21300056: Char_Base_28
-    21300058: Char_Base_29
-    21300060: Char_Base_30
-    21300062: Char_Base_31
-    21300064: Char_Base_32
-    21300066: Char_Base_33
-    21300068: Char_Base_34
-    21300070: Char_Base_35
-    21300072: Char_Base_36
-    21300074: Char_Base_37
-    21300076: Char_Base_38
-    21300078: Char_Base_39
-    21300080: Char_Base_40
-    21300082: Char_Base_41
-    21300084: Char_Base_42
-    21300086: Char_Base_43
-    21300088: Char_Base_44
-    21300090: Char_Base_45
-    21300092: Char_Base_46
-    21300094: Char_Base_47
-    21300096: Char_Base_48
-    21300098: Char_Base_49
-    21300100: Char_Base_50
-    21300102: Char_Base_51
-    21300104: Char_Base_52
-    21300106: Char_Base_53
-    21300108: Char_Base_54
-    21300110: Char_Base_55
-    21300112: Char_Base_56
-    21300114: Char_Base_57
-    21300116: Char_Base_58
-    21300118: Char_Base_59
-    21300120: Char_Base_60
-    21300122: Char_Base_61
-    21300124: Char_Base_62
-    21300126: Char_Base_63
-    21300128: Char_Base_64
-    21300130: Char_Base_65
-    21300132: Char_Base_66
-    21300134: Char_Base_67
-    21300136: Char_Base_68
-    21300138: Char_Base_69
-    21300140: Char_Base_70
-    21300142: Char_Base_71
-    21300144: Char_Base_72
-    21300146: Char_Base_73
-    21300148: Char_Base_74
-    21300150: Char_Base_75
-    21300152: Char_Base_76
-    21300154: Char_Base_77
-    21300156: Char_Base_78
-    21300158: Char_Base_79
-    21300160: Char_Base_80
-    21300162: Char_Base_81
-    21300164: Char_Base_82
-    21300166: Char_Base_83
-    21300168: Char_Base_84
-    21300170: Char_Base_85
-    21300172: Char_Base_86
-    21300174: Char_Base_87
-    21300176: Char_Base_88
-    21300178: Char_Base_89
-    21300180: Char_Base_90
-    21300182: Char_Base_91
-    21300184: Char_Base_92
-    21300186: Char_Base_93
-    21300188: Char_Base_94
-    21300190: Char_Base_95
-    21300192: Char_Base_96
-    21300194: Char_Base_97
-    21300196: Char_Base_98
-    21300198: Char_Base_99
-    21300200: Char_Base_100
-    21300202: Char_Base_101
-    21300204: Char_Base_102
-    21300206: Char_Base_103
-    21300208: Char_Base_104
-    21300210: Char_Base_105
-    21300212: Char_Base_106
-    21300214: Char_Base_107
-    21300216: Char_Base_108
-    21300218: Char_Base_109
-    21300220: Char_Base_110
-    21300222: Char_Base_111
-    21300224: Char_Base_112
-    21300226: Char_Base_113
-    21300228: Char_Base_114
-    21300230: Char_Base_115
-    21300232: Char_Base_116
-    21300234: Char_Base_117
-    21300236: Char_Base_118
-    21300238: Char_Base_119
-    21300240: Char_Base_120
-    21300242: Char_Base_121
-    21300244: Char_Base_122
-    21300246: Char_Base_123
+    21300000: Guard 3_0
+    21300002: Guard 3_1
+    21300004: Guard 3_2
+    21300006: Guard 3_3
+    21300008: Guard 3_4
+    21300010: Guard 3_5
+    21300012: Guard 3_6
+    21300014: Guard 3_7
+    21300016: Guard 3_8
+    21300018: Guard 3_9
+    21300020: Guard 3_10
+    21300022: Guard 3_11
+    21300024: Guard 3_12
+    21300026: Guard 3_13
+    21300028: Guard 3_14
+    21300030: Guard 3_15
+    21300032: Guard 3_16
+    21300034: Guard 3_17
+    21300036: Guard 3_18
+    21300038: Guard 3_19
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -199,7 +95,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Char_Base_0
+      name: Guard 3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -207,13 +103,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_1
+      name: Guard 3_1
       rect:
         serializedVersion: 2
         x: 32
@@ -221,13 +117,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_2
+      name: Guard 3_2
       rect:
         serializedVersion: 2
         x: 64
@@ -235,13 +131,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_3
+      name: Guard 3_3
       rect:
         serializedVersion: 2
         x: 96
@@ -249,13 +145,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_4
+      name: Guard 3_4
       rect:
         serializedVersion: 2
         x: 128
@@ -263,13 +159,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_5
+      name: Guard 3_5
       rect:
         serializedVersion: 2
         x: 160
@@ -277,13 +173,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_6
+      name: Guard 3_6
       rect:
         serializedVersion: 2
         x: 192
@@ -291,13 +187,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_7
+      name: Guard 3_7
       rect:
         serializedVersion: 2
         x: 224
@@ -305,13 +201,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_8
+      name: Guard 3_8
       rect:
         serializedVersion: 2
         x: 256
@@ -319,13 +215,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_9
+      name: Guard 3_9
       rect:
         serializedVersion: 2
         x: 288
@@ -333,13 +229,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_10
+      name: Guard 3_10
       rect:
         serializedVersion: 2
         x: 320
@@ -347,13 +243,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_11
+      name: Guard 3_11
       rect:
         serializedVersion: 2
         x: 352
@@ -361,13 +257,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_12
+      name: Guard 3_12
       rect:
         serializedVersion: 2
         x: 0
@@ -375,13 +271,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_13
+      name: Guard 3_13
       rect:
         serializedVersion: 2
         x: 32
@@ -389,13 +285,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_14
+      name: Guard 3_14
       rect:
         serializedVersion: 2
         x: 96
@@ -409,7 +305,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_15
+      name: Guard 3_15
       rect:
         serializedVersion: 2
         x: 128
@@ -423,7 +319,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_16
+      name: Guard 3_16
       rect:
         serializedVersion: 2
         x: 192
@@ -437,7 +333,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_17
+      name: Guard 3_17
       rect:
         serializedVersion: 2
         x: 224
@@ -451,7 +347,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_18
+      name: Guard 3_18
       rect:
         serializedVersion: 2
         x: 288
@@ -465,7 +361,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Char_Base_19
+      name: Guard 3_19
       rect:
         serializedVersion: 2
         x: 320
