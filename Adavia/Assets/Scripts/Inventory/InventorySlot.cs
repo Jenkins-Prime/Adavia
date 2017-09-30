@@ -7,9 +7,9 @@ using System;
 
 public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
-    private Stack<Item> items;
+    private Stack<ItemSystem> items;
 
-    public Stack<Item> Items
+    public Stack<ItemSystem> Items
     {
         get { return items; }
         set { items = value; }
@@ -27,7 +27,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
     // Use this for initialization
     void Start ()
     {
-        items = new Stack<Item>();
+        items = new Stack<ItemSystem>();
         stackAmountText.text = "";
         RectTransform slotRect = GetComponent<RectTransform>();
         RectTransform stackRect = stackAmountText.GetComponent<RectTransform>();
@@ -40,7 +40,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
         stackRect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, slotRect.sizeDelta.y);
     }
 
-    public void AddItem(Item item)
+    public void AddItem(ItemSystem item)
     {
         items.Push(item);
 
@@ -53,9 +53,9 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
         UpdateSprite(item.normalSprite, item.hoversprite);
     }
 
-    public void AddItems(Stack<Item> items)
+    public void AddItems(Stack<ItemSystem> items)
     {
-        this.items = new Stack<Item>(items);
+        this.items = new Stack<ItemSystem>(items);
         stackAmountText.text = items.Count > 1 ? items.Count.ToString() : "";
         UpdateSprite(GetCurrentItem().normalSprite, GetCurrentItem().hoversprite);
 
@@ -101,14 +101,14 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
         return items.Count == 0;
     }
 
-    public Item GetCurrentItem()
+    public ItemSystem GetCurrentItem()
     {
         return items.Peek();
     }
 
     public bool IsStackable()
     {
-        return GetCurrentItem().stackAmount > items.Count;
+        return GetCurrentItem().Item.StackAmount > items.Count;
     }
 
     public void OnPointerClick(PointerEventData eventData)

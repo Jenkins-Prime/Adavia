@@ -1,37 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Item : MonoBehaviour
+public abstract class Item
 {
-    [SerializeField]
-    public ItemType item;
+    public ItemType Type { get; set; }
+    public string NormalSprite { get; set; }
+    public string HighlightSprite { get; set; }
+    public string ItemName { get; set; }
+    public string ItemDescription { get; set; }
+    public int StackAmount { get; set; }
 
-    public Sprite normalSprite;
-
-    public Sprite hoversprite;
-
-    public int stackAmount;
-
-    public void Use()
+    public Item(ItemType type, string normalSprite, string highlightSprite, string itemName, string itemDescription, int stackAmount)
     {
-        switch (item)
-        {
-            case ItemType.SWORD:
-                Debug.Log("Using Sword");
-                break;
-            case ItemType.POTION:
-                Debug.Log("Using Potion");
-                break;
-            default:
-                break;
-        }
+        Type = type;
+        NormalSprite = normalSprite;
+        HighlightSprite = highlightSprite;
+        ItemName = itemName;
+        ItemDescription = itemDescription;
+        StackAmount = stackAmount;
+        
     }
-}
 
-public enum ItemType
-{
-    SWORD,
-    POTION
+    public Item()
+    {
+
+    }
+
+    protected virtual string DisplayToolTip()
+    {
+        return "";
+    }
+
+    protected abstract void Use();
+
 }

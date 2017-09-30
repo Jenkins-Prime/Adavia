@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 facingDirection;
 
+    private int randomchance;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -72,7 +74,59 @@ public class PlayerMovement : MonoBehaviour
     {
         if (col.CompareTag("Item"))
         {
-            inventory.AddItem(col.GetComponent<Item>());
+            DropItem();
         }
+    }
+
+    private void DropItem()
+    {
+        int dropChance = Random.Range(0, 3);
+        GameObject tempItem = Instantiate(ItemDatabase.instance.item);
+        
+
+        switch (dropChance)
+        {
+            case 0:
+                GenerateWeapon(tempItem);
+                break;
+
+            case 1:
+                GenerateArmour(tempItem);
+                break;
+
+            case 2:
+                GenerateConsumable(tempItem);
+                break;
+        }
+    }
+
+    private void GenerateWeapon(GameObject tempItem)
+    {
+        tempItem.AddComponent<ItemSystem>();
+        ItemSystem weapon = tempItem.GetComponent<ItemSystem>();
+        randomchance = Random.Range(0, ItemDatabase.instance.ItemContainer.Weapons.Count);
+        weapon.Item = ItemDatabase.instance.ItemContainer.Weapons[randomchance];
+        inventory.AddItem(weapon);
+        Destroy(tempItem);
+    }
+
+    private void GenerateArmour(GameObject tempItem)
+    {
+        tempItem.AddComponent<ItemSystem>();
+        ItemSystem armour = tempItem.GetComponent<ItemSystem>();
+        randomchance = Random.Range(0, ItemDatabase.instance.ItemContainer.Armour.Count);
+        armour.Item = ItemDatabase.instance.ItemContainer.Armour[randomchance];
+        inventory.AddItem(armour);
+        Destroy(tempItem);
+    }
+
+    private void GenerateConsumable(GameObject tempItem)
+    {
+        tempItem.AddComponent<ItemSystem>();
+        ItemSystem consumable = tempItem.GetComponent<ItemSystem>();
+        randomchance = Random.Range(0, ItemDatabase.instance.ItemContainer.Consumables.Count);
+        consumable.Item = ItemDatabase.instance.ItemContainer.Consumables[randomchance];
+        inventory.AddItem(consumable);
+        Destroy(tempItem);
     }
 }

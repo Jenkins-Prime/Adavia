@@ -103,9 +103,9 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public bool AddItem(Item item)
+    public bool AddItem(ItemSystem item)
     {
-        if (item.stackAmount == 1)
+        if (item.Item.StackAmount == 1)
         {
             PlaceEmptyItem(item);
             Debug.Log(item.name + " added to inventory");
@@ -119,7 +119,7 @@ public class Inventory : MonoBehaviour
 
                 if (!inventorySlot.IsSlotEmpty())
                 {
-                    if (inventorySlot.GetCurrentItem().item == item.item && inventorySlot.IsStackable())
+                    if (inventorySlot.GetCurrentItem().Item == item.Item && inventorySlot.IsStackable())
                     {
                         inventorySlot.AddItem(item);
                         return true;
@@ -136,7 +136,7 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
-    private bool PlaceEmptyItem(Item item)
+    private bool PlaceEmptyItem(ItemSystem item)
     {
         if (emptySlots > 0)
         {
@@ -192,7 +192,7 @@ public class Inventory : MonoBehaviour
         if (moveTo != null && moveFrom != null)
         {
 
-            Stack<Item> itemsToMove = new Stack<Item>(moveTo.Items);
+            Stack<ItemSystem> itemsToMove = new Stack<ItemSystem>(moveTo.Items);
             moveTo.AddItems(moveFrom.Items);
 
             if (itemsToMove.Count == 0)
