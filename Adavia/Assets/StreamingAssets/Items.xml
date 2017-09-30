@@ -34,5 +34,55 @@
       <HealthAmount>5</HealthAmount>
       <ManaAmount>0</ManaAmount>
     </Item>
+    <Item xsi:type="Consumable">
+      <Type>CONSUMABLE</Type>
+      <NormalSprite>Consumables/health_potion</NormalSprite>
+      <HighlightSprite>Consumables/health_potion [outlined]</HighlightSprite>
+      <ItemName>Minor Health Potion</ItemName>
+      <ItemDescription>This health potion give a small amount of health</ItemDescription>
+      <StackAmount>5</StackAmount>
+      <HealthAmount>5</HealthAmount>
+      <ManaAmount>0</ManaAmount>
+    </Item>
+    <Item xsi:type="Consumable">
+      <Type>CONSUMABLE</Type>
+      <NormalSprite>Consumables/health_potion</NormalSprite>
+      <HighlightSprite>Consumables/health_potion [outlined]</HighlightSprite>
+      <ItemName>Minor Health Potion</ItemName>
+      <ItemDescription>This health potion give a small amount of health</ItemDescription>
+      <StackAmount>5</StackAmount>
+      <HealthAmount>5</HealthAmount>
+      <ManaAmount>0</ManaAmount>
+    </Item>
+    <Item xsi:type="Consumable">
+      <Type>CONSUMABLE</Type>
+      <NormalSprite>Consumables/health_potion</NormalSprite>
+      <HighlightSprite>Consumables/health_potion [outlined]</HighlightSprite>
+      <ItemName>Minor Health Potion</ItemName>
+      <ItemDescription>This health potion give a small amount of health</ItemDescription>
+      <StackAmount>5</StackAmount>
+      <HealthAmount>5</HealthAmount>
+      <ManaAmount>0</ManaAmount>
+    </Item>
+    <Item xsi:type="Consumable">
+      <Type>CONSUMABLE</Type>
+      <NormalSprite>Consumables/health_potion</NormalSprite>
+      <HighlightSprite>Consumables/health_potion [outlined]</HighlightSprite>
+      <ItemName>Minor Health Potion</ItemName>
+      <ItemDescription>This health potion give a small amount of health</ItemDescription>
+      <StackAmount>5</StackAmount>
+      <HealthAmount>5</HealthAmount>
+      <ManaAmount>0</ManaAmount>
+    </Item>
+    <Item xsi:type="Consumable">
+      <Type>CONSUMABLE</Type>
+      <NormalSprite>Consumables/health_potion</NormalSprite>
+      <HighlightSprite>Consumables/health_potion [outlined]</HighlightSprite>
+      <ItemName>Minor Health Potion</ItemName>
+      <ItemDescription>This health potion give a small amount of health</ItemDescription>
+      <StackAmount>5</StackAmount>
+      <HealthAmount>5</HealthAmount>
+      <ManaAmount>0</ManaAmount>
+    </Item>
   </Consumables>
 </ItemContainer>
