@@ -5,9 +5,12 @@ using UnityEngine;
 public enum SwitchStates {Timed, Weighted, OneOff}
 
 public class PressureSwitch : MonoBehaviour {
+	[TooltipAttribute("What kind of switch is it?")]
 	public SwitchStates switches;
+	[TooltipAttribute("Is the switch activated?")]
 	public bool switchActive;
 	private Animator anim;
+	[TooltipAttribute("If it's a Timer Switch, how long before it resets?")]
 	public float switchTimer;
 	private float initialSwitchTimer;
 	private bool timedSwitchActive;

@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class WarpPad : MonoBehaviour {
 
+	[TooltipAttribute("What Warp Pad is the player being transported to?")]
 	public GameObject targetWarpPad;
+	[TooltipAttribute("How long to display the warping animation before transporting?")]
 	public float animTime;
 	private float initialAnimTime;
 	private Animator anim;
+	[TooltipAttribute("How far away (to the left or right) from the target pad do you want the player to land?")]
 	public float xOffset;
+	[TooltipAttribute("How far away (above or below) from the target pad do you want the player to land?")]
 	public float yOffset;
 	private bool playerOnPad;
 	private PlayerMovement player;
