@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 911, y: 421}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 913, y: 442}
+  m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
-  controlID: 704
+  controlID: 9152
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,10 +122,10 @@ MonoBehaviour:
     y: 0
     width: 1065
     height: 947
-  m_MinSize: {x: 202, y: 421}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 685
+  controlID: 9080
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -179,14 +179,14 @@ MonoBehaviour:
     width: 1063
     height: 500
   m_SceneLighting: 1
-  lastFramingTime: 124.7876771786916
+  lastFramingTime: 232.8448648655585
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.9117584, y: 2.1428692, z: 0}
+    m_Target: {x: -3.846944, y: 0.9087332, z: 0}
     speed: 2
-    m_Value: {x: -7.9117584, y: 2.1428692, z: 0}
+    m_Value: {x: -3.846944, y: 0.9087332, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -213,9 +213,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.4309683
+    m_Target: 8.4497595
     speed: 2
-    m_Value: 3.4309683
+    m_Value: 8.4497595
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -298,8 +298,8 @@ MonoBehaviour:
     y: 521
     width: 1065
     height: 426
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -389,7 +389,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 1afcffff00000000
+    m_ExpandedIDs: e421feff36eeffffecfbffff02fcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -430,8 +430,8 @@ MonoBehaviour:
     y: 0
     width: 352
     height: 947
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 234, y: 271}
+  m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -475,19 +475,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Prefab/Collectibles
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Prefab/Collectibles
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Nathan Jenkins\Documents\GitHub\Adavia\Adavia
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 46260000
-    m_LastClickedID: 9798
-    m_ExpandedIDs: 0000000046260000742700008629000094290000622a0000702a000066340000683400006a3400006c3400006e34000000ca9a3bffffff7f
+    m_SelectedIDs: 089d0000
+    m_LastClickedID: 40200
+    m_ExpandedIDs: 000000004e2600007c27000094290000a2290000802a0000862a00002433000026330000283300002a3300002c33000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -515,7 +515,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000046260000742700008629000094290000622a0000702a000066340000683400006a3400006c3400006e34000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000004e2600007c27000094290000a2290000802a00002433000026330000283300002a3300002c33000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -542,8 +542,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: ea6100003e2d00001c4100006a280000683a0000f82f0000da2c000010330000222a0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: ea6100003e2d00001c4100006a280000683a0000f82f0000da2c000010330000222a00000e6d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
