@@ -108,10 +108,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 913, y: 442}
-  m_MaxSize: {x: 22008, y: 10021}
+  m_MinSize: {x: 909, y: 442}
+  m_MaxSize: {x: 22004, y: 10000}
   vertical: 0
-  controlID: 11594
+  controlID: 20278
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 11573
+  controlID: 20257
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -366,14 +366,14 @@ MonoBehaviour:
     width: 1063
     height: 500
   m_SceneLighting: 1
-  lastFramingTime: 232.8448648655585
+  lastFramingTime: 10745.701869503066
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.846944, y: 0.9087332, z: 0}
+    m_Target: {x: -7.3008194, y: 1.5742097, z: 0}
     speed: 2
-    m_Value: {x: -3.846944, y: 0.9087332, z: 0}
+    m_Value: {x: -7.3008194, y: 1.5742097, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -400,9 +400,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.4497595
+    m_Target: 8.64315
     speed: 2
-    m_Value: 8.4497595
+    m_Value: 8.64315
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -525,7 +525,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: e421feff36eeffff02fcffff00000000
+    m_ExpandedIDs: fe34f5ffc83ff5ff3e40f5ff747cf5ff2e26fdff0afcffff1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -586,19 +586,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Art
+    - Assets/Scenes/Indoor Scenes
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Art
+  - Assets/Scenes/Indoor Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Nathan Jenkins\Documents\GitHub\Adavia\Adavia
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7c270000
-    m_LastClickedID: 10108
-    m_ExpandedIDs: 000000004e2600007c27000094290000a2290000802a0000862a00002433000026330000283300002a3300002c33000000ca9a3bffffff7f
+    m_SelectedIDs: 882a0000
+    m_LastClickedID: 10888
+    m_ExpandedIDs: 0000000050260000802700009c290000aa2900008a2a0000022c0000fa2c00009433000096330000983300009a3300009c33000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -626,7 +626,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004e2600007c27000094290000a2290000802a0000862a00002433000026330000283300002a3300002c33000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000050260000802700009c290000aa2900008a2a0000022c0000fa2c00009433000096330000983300009a3300009c33000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: ea6100003e2d00001c4100006a280000683a0000f82f0000da2c000010330000222a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

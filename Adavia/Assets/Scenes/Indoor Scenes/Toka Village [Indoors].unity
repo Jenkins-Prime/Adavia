@@ -1964,6 +1964,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41e7d6763824ff8449613c05c3b32720, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &771547372 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114321245366175246, guid: 41e7d6763824ff8449613c05c3b32720,
+    type: 2}
+  m_PrefabInternal: {fileID: 771547371}
+  m_Script: {fileID: 11500000, guid: ab8373d712f4073478ab60f4a8834c77, type: 3}
 --- !u!1 &776042854
 GameObject:
   m_ObjectHideFlags: 0
@@ -4040,7 +4046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkingSpeed: 3
-  inventory: {fileID: 0}
+  inventory: {fileID: 771547372}
 --- !u!95 &1591204045
 Animator:
   serializedVersion: 3

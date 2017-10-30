@@ -1220,6 +1220,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6195698, y: 0.2927866}
   m_EdgeRadius: 0
+--- !u!114 &369482032 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114321245366175246, guid: 41e7d6763824ff8449613c05c3b32720,
+    type: 2}
+  m_PrefabInternal: {fileID: 379623416}
+  m_Script: {fileID: 11500000, guid: ab8373d712f4073478ab60f4a8834c77, type: 3}
 --- !u!1 &375318740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1449,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929400341746696, guid: 41e7d6763824ff8449613c05c3b32720, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41e7d6763824ff8449613c05c3b32720, type: 2}
@@ -2010,7 +2020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkingSpeed: 3
-  inventory: {fileID: 0}
+  inventory: {fileID: 369482032}
 --- !u!50 &546978157
 Rigidbody2D:
   serializedVersion: 4
